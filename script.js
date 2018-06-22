@@ -5,7 +5,7 @@ function setup() {
   p5Canvas = createCanvas(800, 600);
   p5Canvas.parent("#p5-canvas");
   myName = select("#my-name");
-  myName.html("[Your Name Here]"); // enter your name here!
+  myName.html("Melvin Estrada"); // enter your name here!
 }
 
  /*
@@ -21,8 +21,15 @@ function setup() {
 
 // Write all your code inside the draw() function below!
 function draw() {
+    colorMode(HSB);
   // Example. You can remove when you're ready!
   background(255, 204, 100); // try changing this to a blue background
   fill(255, 204, 0);    // Always call fill() before the shape you want to fill in.
-  rect(30, 20, 55, 55); // Draw a 30x20 pixel rectangle at coordinate (55,55)
+  rect(55, 55, 55, 55);
+  fill(200,100,100);
+  arc(50, 50, 80, 80, 1, PI + QUARTER_PI, CHORD);
+  fill(200,200,100);
+  triangle(100,100,150,400,200,140)
+  fill(20,60,100);
+ellipse(100,100,40,40);// Draw a 30x20 pixel rectangle at coordinate (55,55)
 }
