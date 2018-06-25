@@ -23,13 +23,21 @@ function setup() {
 function draw() {
     colorMode(HSB);
   // Example. You can remove when you're ready!
-  background(255, 204, 100); // try changing this to a blue background
-  fill(255, 204, 0);    // Always call fill() before the shape you want to fill in.
-  rect(55, 55, 55, 55);
-  fill(200,100,100);
-  arc(50, 50, 80, 80, 1, PI + QUARTER_PI, CHORD);
-  fill(200,200,100);
-  triangle(100,100,150,400,200,140)
-  fill(20,60,100);
-ellipse(100,100,40,40);// Draw a 30x20 pixel rectangle at coordinate (55,55)
+  background(200, 204, 100); // try changing this to a blue background
+  fill(105,254,100);
+  rect(0,400,800,200);
+  fill(100,264,70);    // Always call fill() before the shape you want to fill in.
+  rect(515, 390, 18, 21); 
+  rect(510, 390, 18, 22);
+  rect(475, 390, 18, 21);
+  rect(465, 390, 18, 22);
+    triangle(575,390,520,390, 505,375);
+    ellipse(450,380,27,18);
+    
+  fill(100,264,70);
+  arc(500, 390, 87, 78, PI,TWO_PI );
+  fill(210,200,100);
+  arc(200,400,130,100,0,PI);
+  fill(50,104,100);
+ellipse(10,20,60,60);// Draw a 30x20 pixel rectangle at coordinate (55,55)
 }
